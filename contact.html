@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="site-container">
+      <div id="header">
+        <h1><a href="index.html">Silvia Yudha Putri</a></h1>
+        <p>Personal Blog's</p>
+      </div>
+      <!-- End header -->
+      <div id="menu-content">
+        <div id="menu">
+          <h3 class="judul_1">Main Menu</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <!-- End menu -->
+        <div id="content">
+          <div class="dates">
+            <h3 id="greeting"></h3>
+            <p id="date"></p>
+          </div>
+          <h1 class="judul_2">Hubungi Kami</h1>
+          <img src="img/kontak.jfif" class="img-contact" />
+          <p>
+           Hubungi kami jika ada yang ingin disampaikan baik itu kritik maupun saran akan sangan membantu bagi saya dalam mengembangkan website ini. Bila ada yang kurang mohon berikan komentar atau pesan lewat form berikut.
+          </p>
+        </div>
+        <div class="contact">
+          <form action="/proses-kontak" method="post">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="alamat">Alamat:</label>
+            <input type="text" id="alamat" name="alamat" required>
+
+            <label for="kota">Kota:</label>
+            <input type="text" id="kota" name="kota" required>
+
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan" rows="4" required></textarea>
+
+            <input type="submit" value="Kirim">
+        </div>
+
+        <!-- End Content -->
+        <br class="floating" />
+      </div>
+      <!-- End menu-content -->
+      <div id="footer">
+        <p>Copy Right&copy; Silvia Yudha Putri | 231011700448 | 01SIFP009 | 2023.</p>
+      </div>
+      <!-- End Footer -->
+    </div>
+    <!-- End site container -->
+  </body>
+</html>

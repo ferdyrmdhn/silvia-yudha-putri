@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script>
+      function tampilkanGambar(gambar) {
+        var overlay = document.getElementById("gambar-overlay");
+        var overlayImg = overlay.getElementsByTagName("img")[0];
+        overlayImg.src = gambar;
+        overlay.style.display = "block";
+      }
+
+      function tutupGambar() {
+        var overlay = document.getElementById("gambar-overlay");
+        overlay.style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="site-container">
+      <div id="header">
+        <h1><a href="index.html">Silvia Yudha Putri</a></h1>
+        <p>Personal Blog's</p>
+      </div>
+      <!-- End header -->
+      <div id="menu-content">
+        <div id="menu">
+          <h3 class="judul_1">Main Menu</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <!-- End menu -->
+        <div id="content">
+          <div class="dates">
+            <h3 id="greeting"></h3>
+            <p id="date"></p>
+          </div>
+          <h1 class="judul_2">Gallery</h1>
+          <div
+            class="gambar-thumbnail gallery"
+            onclick="tampilkanGambar('img/gallery/html.png')"
+          >
+            <img src="img/gallery/html.png" alt="Gambar 1" />
+          </div>
+          <div
+            class="gambar-thumbnail gallery"
+            onclick="tampilkanGambar('img/gallery/css.jfif')"
+          >
+            <img src="img/gallery/css.jfif" alt="Gambar 2" />
+          </div>
+          <div
+            class="gambar-thumbnail gallery"
+            onclick="tampilkanGambar('img/gallery/js.png')"
+          >
+            <img src="img/gallery/js.png" alt="Gambar 3" />
+          </div>
+          <div
+            class="gambar-thumbnail gallery"
+            onclick="tampilkanGambar('img/gallery/tailwind.jfif')"
+          >
+            <img src="img/gallery/tailwind.jfif" alt="Gambar 4" />
+          </div>
+          <div
+            class="gambar-thumbnail gallery"
+            onclick="tampilkanGambar('img/gallery/laravel.png')"
+          >
+            <img src="img/gallery/laravel.png" alt="Gambar 5" />
+          </div>
+          <div
+            class="gambar-thumbnail gallery"
+            onclick="tampilkanGambar('img/gallery/react.png')"
+          >
+            <img src="img/gallery/react.png" alt="Gambar 6" />
+          </div>
+          <div
+            class="gambar-thumbnail gallery"
+            onclick="tampilkanGambar('img/gallery/node.png')"
+          >
+            <img src="img/gallery/node.png" alt="Gambar 7" />
+          </div>
+          <div
+            class="gambar-thumbnail gallery"
+            onclick="tampilkanGambar('img/gallery/python.png')"
+          >
+            <img src="img/gallery/python.png" alt="Gambar 8" />
+          </div>
+          <div
+            class="gambar-thumbnail gallery"
+            onclick="tampilkanGambar('img/gallery/golang.png')"
+          >
+            <img src="img/gallery/golang.png" alt="Gambar 8" />
+          </div>
+
+          <div id="gambar-overlay" onclick="tutupGambar()">
+            <img src="" alt="Gambar Besar" />
+          </div>
+        </div>
+
+        <!-- End Content -->
+        <br class="floating" />
+      </div>
+      <!-- End menu-content -->
+      <div id="footer">
+        <p>
+          Copy Right&copy; Silvia Yudha Putri | 231011700448 | 01SIFP009 | 2023.
+        </p>
+      </div>
+      <!-- End Footer -->
+    </div>
+    <!-- End site container -->
+  </body>
+</html>
